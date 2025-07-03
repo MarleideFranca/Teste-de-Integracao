@@ -37,5 +37,32 @@ public class BibliotecaTest {
         Biblioteca biblioteca = new Biblioteca("Nova Biblioteca", "22334455000111", 2000);
         assertFalse(biblioteca.patrimonioHistorico());
     }
-}
 
+    @Test
+    public void testAcervoPremium() {
+        Biblioteca biblioteca = new Biblioteca("Biblioteca Moderna", "33445566000122", 2010);
+
+        // Adiciona 5 livros lançamentos (edição > 2022)
+        biblioteca.adicionarLivro(new Livro("Livro 1", 2023, "Autor A", "0001"));
+        biblioteca.adicionarLivro(new Livro("Livro 2", 2024, "Autor B", "0002"));
+        biblioteca.adicionarLivro(new Livro("Livro 3", 2025, "Autor C", "0003"));
+        biblioteca.adicionarLivro(new Livro("Livro 4", 2023, "Autor D", "0004"));
+        biblioteca.adicionarLivro(new Livro("Livro 5", 2024, "Autor E", "0005"));
+
+        // Deve retornar true
+        assertTrue(biblioteca.acervoPremium());
+    }
+
+    @Test
+    public void testAcervoPremiumFalse() {
+        Biblioteca biblioteca = new Biblioteca("Biblioteca Simples", "99887766000133", 2000);
+ // Apenas 3 livros lançamentos
+        biblioteca.adicionarLivro(new Livro("Livro 1", 2021, "Autor A", "0001"));
+        biblioteca.adicionarLivro(new Livro("Livro 2", 2022, "Autor B", "0002"));
+        biblioteca.adicionarLivro(new Livro("Livro 3", 2023, "Autor C", "0003"));
+
+        // Deve retornar false
+        assertFalse(biblioteca.acervoPremium());
+
+    }
+}
