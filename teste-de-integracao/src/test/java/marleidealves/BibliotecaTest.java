@@ -64,5 +64,5 @@ public class BibliotecaTest {
         // Deve retornar false
         assertFalse(biblioteca.acervoPremium());
 
-    }
-}
+    } // ← chave de fechamento do método
+}  // ← chave de fechamento da classe
