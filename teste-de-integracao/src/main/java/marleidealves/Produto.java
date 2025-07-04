@@ -3,46 +3,37 @@ package marleidealves;
 import java.util.Objects;
 
 public class Produto {
-
     private String nome;
     private double preco;
-
-    // Construtor
+//Bloquear no construtor de produto números negativos
     public Produto(String nome, double preco) {
+        if (preco < 0) {
+            throw new IllegalArgumentException("Preço não pode ser negativo.");
+        }
         this.nome = nome;
         this.preco = preco;
     }
 
-    // Getter para nome
     public String getNome() {
         return nome;
     }
 
-    // Setter para nome
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Getter para preco
     public double getPreco() {
         return preco;
     }
 
-    // Setter para preco
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public void setPreco(double preco) {
+        if (preco < 0) {
+            throw new IllegalArgumentException("Preço não pode ser negativo.");
+        }
         this.preco = preco;
     }
 
-    // Método toString (opcional)
     @Override
-    public String toString() {
-        return "Produto [nome=" + nome + ", preco=" + preco + "]";
-    }
-
-
-// Implementação da classe Produto
-//sobrescrever equals() e hashCode() para o Map funcione corretamente com produtos iguais:
-@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Produto)) return false;
@@ -55,5 +46,12 @@ public class Produto {
     public int hashCode() {
         return Objects.hash(nome, preco);
     }
-}
 
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", preco=" + preco +
+                '}';
+    }
+}
