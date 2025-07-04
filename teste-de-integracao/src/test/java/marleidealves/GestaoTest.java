@@ -36,17 +36,13 @@ public class GestaoTest {
         assertEquals(0.0, total, 0.01);
     }
 
-    @Test
-public void testProdutoComPrecoNegativo() {
-    Pedido pedido = new Pedido();
-    Produto produtoInvalido = new Produto("Erro", -50.0);
-    pedido.adicionarProduto(produtoInvalido);
+ @Test
+    public void testCriacaoProdutoComPrecoNegativo() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new Produto("Erro", -10.0); // deve lançar exceção
+        });
 
-    Gestao gestao = new Gestao(pedido);
-    double total = gestao.valorTotalVenda();
-
-    // Falha esperada: total não deveria ser negativo
-    assertTrue(total >= 0, "O total da venda não deve ser negativo!");
-}
+        assertEquals("Preço não pode ser negativo.", exception.getMessage());
+    }
 
 }
