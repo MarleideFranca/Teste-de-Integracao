@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="marleidealves.LivroTest" time="0.01" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="marleidealves.LivroTest" time="0.044" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\marle\AppData\Local\Temp\surefire7319030892569709300\surefirebooter-20250703204702116_3.jar C:\Users\marle\AppData\Local\Temp\surefire7319030892569709300 2025-07-03T20-47-01_462-jvmRun1 surefire-20250703204702116_1tmp surefire_0-20250703204702116_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\marle\AppData\Local\Temp\surefire5336464321231253299\surefirebooter-20250704094702213_3.jar C:\Users\marle\AppData\Local\Temp\surefire5336464321231253299 2025-07-04T09-47-01_705-jvmRun1 surefire-20250704094702213_1tmp surefire_0-20250704094702213_2tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\marle\Desktop\TesteSoftware\Atividade3_Unidade2\Teste-de-Integracao\teste-de-integracao\target\test-classes;C:\Users\marle\Desktop\TesteSoftware\Atividade3_Unidade2\Teste-de-Integracao\teste-de-integracao\target\classes;C:\Users\marle\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\marle\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\marle\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\marle\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\marle\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\marle\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\marle\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\marle\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\marle"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\marle\AppData\Local\Temp\surefire7319030892569709300\surefirebooter-20250703204702116_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\marle\AppData\Local\Temp\surefire5336464321231253299\surefirebooter-20250704094702213_3.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testGetSetIsbn" classname="marleidealves.LivroTest" time="0.001"/>
-  <testcase name="testGetSetNome" classname="marleidealves.LivroTest" time="0.002"/>
-  <testcase name="testGetSetAutor" classname="marleidealves.LivroTest" time="0.001"/>
-  <testcase name="testVerificaLancamentoTrue" classname="marleidealves.LivroTest" time="0.001"/>
-  <testcase name="testVerificaLancamentoFalse" classname="marleidealves.LivroTest" time="0.0"/>
+  <testcase name="testGetSetIsbn" classname="marleidealves.LivroTest" time="0.005"/>
+  <testcase name="testGetSetNome" classname="marleidealves.LivroTest" time="0.014"/>
+  <testcase name="testGetSetAutor" classname="marleidealves.LivroTest" time="0.002"/>
+  <testcase name="testVerificaLancamentoTrue" classname="marleidealves.LivroTest" time="0.003"/>
+  <testcase name="testVerificaLancamentoFalse" classname="marleidealves.LivroTest" time="0.004"/>
   <testcase name="testGetSetEdicao" classname="marleidealves.LivroTest" time="0.001"/>
 </testsuite>

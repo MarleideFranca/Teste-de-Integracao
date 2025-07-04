@@ -1,5 +1,7 @@
 package marleidealves;
 
+import java.util.Objects;
+
 public class Produto {
 
     private String nome;
@@ -37,4 +39,21 @@ public class Produto {
         return "Produto [nome=" + nome + ", preco=" + preco + "]";
     }
 
+
+// Implementação da classe Produto
+//sobrescrever equals() e hashCode() para o Map funcione corretamente com produtos iguais:
+@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Produto)) return false;
+        Produto produto = (Produto) o;
+        return Double.compare(produto.preco, preco) == 0 &&
+               Objects.equals(nome, produto.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, preco);
+    }
 }
+

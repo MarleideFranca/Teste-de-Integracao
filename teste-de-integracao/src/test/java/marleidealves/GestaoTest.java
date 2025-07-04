@@ -35,4 +35,18 @@ public class GestaoTest {
 
         assertEquals(0.0, total, 0.01);
     }
+
+    @Test
+public void testProdutoComPrecoNegativo() {
+    Pedido pedido = new Pedido();
+    Produto produtoInvalido = new Produto("Erro", -50.0);
+    pedido.adicionarProduto(produtoInvalido);
+
+    Gestao gestao = new Gestao(pedido);
+    double total = gestao.valorTotalVenda();
+
+    // Falha esperada: total não deveria ser negativo
+    assertTrue(total >= 0, "O total da venda não deve ser negativo!");
+}
+
 }
