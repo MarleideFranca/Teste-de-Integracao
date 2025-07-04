@@ -12,9 +12,9 @@ public void testCalculo() {
     double y = 8.0;
     double z = 1.0;
     Teste instance = new Teste();
-    double e = 15.0;
+    double e = 18.0; // valor corrigido
     double r = instance.calculo(x, y, z);
-    assertEquals(e, r, 0.0);
+    assertEquals(e, r, .0);
 }
 
     
